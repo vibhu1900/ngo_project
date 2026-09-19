@@ -188,10 +188,15 @@ h6 {
   inset: 0 auto 0 0;
   padding: 0 20px;
 }
-
+.scst-obc-title{
+  color:#fff;
+  font-size: 14px;
+  margin-bottom:0px !important;
+}
 .header .logo img {
-  max-height: 72px;
+  max-height: 58px;
   margin-right: 8px;
+  border-radius: 34px !important;
 }
 
 .header .logo h1 {

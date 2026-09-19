@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../../assets/css/mainstyle.css"
 import { Link } from 'react-router-dom';
-import EventLogo from '../../assets/images/br-event-logo.png'
+import Logo from '../../assets/images/LOGO.jpeg'
 import { Button, Container } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa';
    
@@ -73,9 +73,10 @@ function NavBar() {
         <header id="header" className={`header d-flex align-items-center sticky-top ${isMenuOpen ? 'mobile-nav-active' : ''}`}>
           <div className="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
             <Link to="/" className="logo d-flex align-items-center me-auto">
-              {/* <img src={EventLogo} alt="logo" className="logo-wecd" /> */}
-              <h1 className="sitename">Demo NGO</h1>
+              <img src={Logo} alt="Logo" className="logo-wecd" />
+                 <p className="scst-obc-title">SC/ST/OBC वैचारिक महासभा</p>
             </Link>
+         
             <li className="mobile-only-login">
   <Button as={Link} to="/Login" variant="primary" className="login-btn">Login</Button>
 </li>
@@ -83,7 +84,7 @@ function NavBar() {
               <ul>
                 {/* --- CHANGE 2: Added onClick to close menu on link click --- */}
                 <li><Link to="/" onClick={() => setIsMenuOpen(false)} className="active">Home</Link></li>
-                
+
                 <li className={`dropdown ${openDropdowns['about'] ? 'dropdown-active' : ''}`}>
                   <Link to="#about" onClick={(e) => { e.preventDefault(); toggleDropdown('about'); }}>
                     <span>About</span> <i className={`bi bi-chevron-down toggle-dropdown ${openDropdowns['about'] ? 'rotate-icon' : ''}`}></i>
