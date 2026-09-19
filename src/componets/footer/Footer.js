@@ -22,7 +22,9 @@ function Footer() {
           <div className="col-lg-4 col-md-6 footer-about">
             <Link to="/" className="logo d-flex align-items-center">
               {/* <img src={EventLogo} alt="logo" className="logo-wecd" /> */}
-              <span className="sitename" style={{ color: '#ffffff' }}>NGO</span>
+              <span className="sitename" style={{ color: '#ffffff' }}>SC/ST/OBC वैचारिक महासभा
+
+</span>
             </Link>
             <div className="footer-contact pt-3">
               <p style={{ color: '#ffffff' }}>A108 Adam Street</p>
@@ -85,7 +87,7 @@ function Footer() {
       </div>
 
       <div className="container copyright text-center mt-4">
-        <p style={{ color: '#ffffff' }}>© <span>Copyright</span> <strong className="px-1 sitename">NGO Events</strong> <span>All Rights Reserved</span></p>
+        <p style={{ color: '#ffffff' }}>© <span>Copyright</span> <strong className="px-1 sitename">UKSSOVM</strong> <span>All Rights Reserved</span></p>
         <div className="credits">
           Designed by <a href="https://bootstrapmade.com/" style={{ color: '#ffffff' }}>Brainrock</a>
         </div>
